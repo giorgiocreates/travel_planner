@@ -10,33 +10,39 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #ffffff 100%);
             min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(173, 216, 230, 0.2) 0%, transparent 50%);
         }
         
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            background: white;
-            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            border: 2px solid rgba(173, 216, 230, 0.3);
+            backdrop-filter: blur(10px);
         }
         
         .header {
             text-align: center;
             margin-bottom: 30px;
             padding-bottom: 20px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #1e3c72;
         }
         
         .header h1 {
-            color: #333;
+            color: #1e3c72;
             font-size: 2.5em;
             margin: 0;
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #1e3c72, #4a90e2, #87ceeb);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
         
         .options-comparison {
@@ -47,10 +53,12 @@
         }
         
         .option-card {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: linear-gradient(135deg, #4a90e2 0%, #87ceeb 100%);
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 15px;
             color: white;
+            box-shadow: 0 10px 20px rgba(74, 144, 226, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.2);
         }
         
         .option-card h3 {
@@ -59,11 +67,13 @@
         }
         
         .recommendation {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 15px;
             margin: 20px 0;
             color: white;
+            box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.2);
         }
         
         .tabs {
@@ -84,8 +94,8 @@
         }
         
         .tab.active {
-            color: #667eea;
-            border-bottom-color: #667eea;
+            color: #1e3c72;
+            border-bottom-color: #1e3c72;
             font-weight: bold;
         }
         
@@ -98,12 +108,13 @@
         }
         
         .timeline-container {
-            background: #f8f9fa;
+            background: rgba(240, 248, 255, 0.8);
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 15px;
             margin: 20px 0;
             overflow-x: auto;
-            border: 1px solid #dee2e6;
+            border: 2px solid rgba(173, 216, 230, 0.5);
+            backdrop-filter: blur(5px);
         }
         
         .timeline {
@@ -177,21 +188,21 @@
             border: 1px solid #dee2e6;
         }
         
-        /* Color coding */
-        .mum { background-color: #ff6b9d; }
-        .dad { background-color: #4ecdc4; }
-        .sister { background-color: #45b7d1; }
-        .brother { background-color: #96ceb4; }
-        .you { background-color: #feca57; }
-        .lucy { background-color: #ff9ff3; }
+        /* Winter Holiday Color Scheme */
+        .mum { background: linear-gradient(135deg, #c62d42 0%, #e74c3c 100%); }
+        .dad { background: linear-gradient(135deg, #2980b9 0%, #3498db 100%); }
+        .sister { background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%); }
+        .brother { background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); }
+        .you { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
+        .lucy { background: linear-gradient(135deg, #e91e63 0%, #ff6b9d 100%); }
         
-        .location-tilburg { background-color: #667eea; }
-        .location-frankfurt { background-color: #f093fb; }
-        .location-spain { background-color: #feca57; }
-        .location-travel { background-color: #95afc0; }
+        .location-tilburg { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
+        .location-frankfurt { background: linear-gradient(135deg, #c62d42 0%, #e74c3c 100%); }
+        .location-spain { background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%); }
+        .location-travel { background: linear-gradient(135deg, #7f8c8d 0%, #95a5a6 100%); }
         
         .download-btn {
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
             color: white;
             border: none;
             padding: 15px 30px;
@@ -199,11 +210,13 @@
             border-radius: 25px;
             cursor: pointer;
             margin: 10px;
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 15px rgba(30, 60, 114, 0.3);
         }
         
         .download-btn:hover {
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(30, 60, 114, 0.4);
         }
         
         .schedule-table {
@@ -220,7 +233,7 @@
         }
         
         .schedule-table th {
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
             color: white;
             font-weight: bold;
         }
@@ -236,15 +249,48 @@
             display: flex;
             align-items: center;
             padding: 8px;
-            border-radius: 5px;
-            background: #f8f9fa;
+            border-radius: 8px;
+            background: rgba(240, 248, 255, 0.6);
+            border: 1px solid rgba(173, 216, 230, 0.3);
         }
         
         .legend-color {
             width: 20px;
             height: 20px;
-            border-radius: 3px;
+            border-radius: 4px;
             margin-right: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .legend-color:hover {
+            transform: scale(1.1);
+        }
+        
+        .color-picker {
+            display: none;
+            position: absolute;
+            background: white;
+            border: 2px solid #1e3c72;
+            border-radius: 8px;
+            padding: 10px;
+            z-index: 1000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .color-option {
+            width: 30px;
+            height: 30px;
+            margin: 3px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        
+        .color-option:hover {
+            border-color: #1e3c72;
         }
         
         @media (max-width: 768px) {
@@ -288,35 +334,46 @@
         </div>
         
         <div class="recommendation">
-            <h3>💡 Recomendación: Opción 2</h3>
-            <p><strong>¿Por qué?:</strong> Mejor balance trabajo-vida para la visita de octubre, más tiempo de calidad en familia, y el viaje en tren AMS→FRA es conveniente (3.5-4 horas directo). El costo extra de viaje vale la pena por el tiempo extendido en familia.</p>
+            <h3>💡 Recomendación: Opción 1</h3>
+            <p><strong>¿Por qué?:</strong> Menos estrés de viajes múltiples, una sola reserva de transporte, más tiempo continuo en familia durante las festividades navideñas, y logística más simple para todos. Una visita larga es ideal para disfrutar las fiestas juntos.</p>
         </div>
         
         <div class="legend">
             <div class="legend-item">
-                <div class="legend-color mum"></div>
+                <div class="legend-color mum" onclick="showColorPicker('mum', event)"></div>
                 <span>Mami</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color dad"></div>
+                <div class="legend-color dad" onclick="showColorPicker('dad', event)"></div>
                 <span>Papi</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color sister"></div>
+                <div class="legend-color sister" onclick="showColorPicker('sister', event)"></div>
                 <span>Karla</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color brother"></div>
+                <div class="legend-color brother" onclick="showColorPicker('brother', event)"></div>
                 <span>Luis</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color you"></div>
+                <div class="legend-color you" onclick="showColorPicker('you', event)"></div>
                 <span>Tú</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color lucy"></div>
+                <div class="legend-color lucy" onclick="showColorPicker('lucy', event)"></div>
                 <span>Lucy</span>
             </div>
+        </div>
+        
+        <div id="colorPicker" class="color-picker">
+            <div class="color-option" style="background: linear-gradient(135deg, #c62d42, #e74c3c)" onclick="changeColor('#c62d42')"></div>
+            <div class="color-option" style="background: linear-gradient(135deg, #2980b9, #3498db)" onclick="changeColor('#2980b9')"></div>
+            <div class="color-option" style="background: linear-gradient(135deg, #8e44ad, #9b59b6)" onclick="changeColor('#8e44ad')"></div>
+            <div class="color-option" style="background: linear-gradient(135deg, #27ae60, #2ecc71)" onclick="changeColor('#27ae60')"></div>
+            <div class="color-option" style="background: linear-gradient(135deg, #f39c12, #e67e22)" onclick="changeColor('#f39c12')"></div>
+            <div class="color-option" style="background: linear-gradient(135deg, #e91e63, #ff6b9d)" onclick="changeColor('#e91e63')"></div>
+            <div class="color-option" style="background: linear-gradient(135deg, #16a085, #1abc9c)" onclick="changeColor('#16a085')"></div>
+            <div class="color-option" style="background: linear-gradient(135deg, #d35400, #e67e22)" onclick="changeColor('#d35400')"></div>
         </div>
         
         <div class="tabs">
@@ -326,7 +383,7 @@
         </div>
         
         <div id="schedule" class="tab-content active">
-            <h3>📋 Agenda Principal - Opción 2 (Recomendada)</h3>
+            <h3>📋 Agenda Principal - Opción 1 (Recomendada)</h3>
             <table class="schedule-table" id="scheduleTable">
                 <thead>
                     <tr>
@@ -353,28 +410,50 @@
         </div>
         
         <div id="travel" class="tab-content">
-            <h3>✈️ Recomendaciones de Viaje</h3>
-            <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
-                <h4>🚄 AMS/Utrecht → Frankfurt</h4>
-                <ul>
-                    <li><strong>Tren directo:</strong> 3.5-4 horas, muy cómodo</li>
-                    <li><strong>Costo:</strong> €39-89 dependiendo del tiempo de reserva</li>
-                    <li><strong>Frecuencia:</strong> Cada 2 horas</li>
-                </ul>
+            <h3>✈️ Opciones de Viaje para Mami</h3>
+            <div style="background: rgba(240, 248, 255, 0.8); padding: 20px; border-radius: 15px; border: 2px solid rgba(173, 216, 230, 0.5);">
+                <h4>🚄 Opción 1: Tren (Recomendado)</h4>
+                <div style="background: rgba(255, 255, 255, 0.7); padding: 15px; border-radius: 10px; margin: 10px 0;">
+                    <p><strong>20 Noviembre 2025:</strong></p>
+                    <ul>
+                        <li><strong>Tilburg → Utrecht:</strong> 07:33 - 08:37 (€15)</li>
+                        <li><strong>Utrecht → Frankfurt Airport:</strong> ICE 09:00 - 12:06 (€53)</li>
+                        <li><strong>Total ida:</strong> €68, 4h 33min</li>
+                    </ul>
+                    <p><strong>8 Diciembre 2025:</strong></p>
+                    <ul>
+                        <li><strong>Frankfurt → Utrecht:</strong> ICE 13:27 - 16:59 (€53)</li>
+                        <li><strong>Utrecht → Tilburg:</strong> 17:15 - 18:20 (€15)</li>
+                        <li><strong>Total regreso:</strong> €68, 4h 53min</li>
+                    </ul>
+                    <p><strong>💰 Costo Total:</strong> €136</p>
+                </div>
                 
-                <h4>✈️ Alternativa: Vuelo AMS → FRA</h4>
-                <ul>
-                    <li><strong>Tiempo de vuelo:</strong> 1.5 horas</li>
-                    <li><strong>Tiempo total:</strong> 3-4 horas (incluyendo tiempo de aeropuerto)</li>
-                    <li><strong>Costo:</strong> €80-150</li>
-                </ul>
+                <h4>✈️ Opción 2: Vuelo</h4>
+                <div style="background: rgba(255, 255, 255, 0.7); padding: 15px; border-radius: 10px; margin: 10px 0;">
+                    <p><strong>20 Noviembre 2025:</strong></p>
+                    <ul>
+                        <li><strong>AMS → FRA:</strong> Lufthansa 18:20 - 19:30 (1h 10min)</li>
+                    </ul>
+                    <p><strong>8 Diciembre 2025:</strong></p>
+                    <ul>
+                        <li><strong>FRA → AMS:</strong> Lufthansa 16:10 - 17:20 (1h 10min)</li>
+                    </ul>
+                    <p><strong>💰 Costo Total:</strong> €240</p>
+                </div>
                 
-                <h4>📋 Consejos de Reserva</h4>
-                <ul>
-                    <li>Reserva trenes con 3-4 semanas de anticipación para mejores precios</li>
-                    <li>Considera boletos flexibles para posibles cambios de fecha</li>
-                    <li>Se recomienda el tren por comodidad y llegada al centro</li>
-                </ul>
+                <h4>📋 Recomendación</h4>
+                <div style="background: rgba(46, 125, 50, 0.1); padding: 15px; border-radius: 10px; border: 2px solid rgba(76, 175, 80, 0.3);">
+                    <p><strong>Opción 1 (Tren)</strong> es mejor porque:</p>
+                    <ul>
+                        <li>💰 Más económico (€104 menos que vuelo)</li>
+                        <li>🎯 Llega directo al centro de Frankfurt</li>
+                        <li>🧳 Sin restricciones de equipaje</li>
+                        <li>📱 WiFi durante el viaje</li>
+                        <li>🌱 Más ecológico</li>
+                        <li>⏰ Horarios más flexibles</li>
+                    </ul>
+                </div>
             </div>
         </div>
         
@@ -542,10 +621,8 @@
                 lucy: 'Frankfurt'
             };
 
-            // Mami's schedule
-            if (date >= new Date('2025-10-13') && date <= new Date('2025-10-30')) {
-                locations.mami = 'Frankfurt';
-            } else if (date >= new Date('2025-10-31') && date <= new Date('2025-11-04')) {
+            // Mami's schedule - Option 1: stays in Netherlands until Nov 20
+            if (date >= new Date('2025-10-31') && date <= new Date('2025-11-04')) {
                 locations.mami = 'Tilburg';
             } else if (date >= new Date('2025-11-10') && date <= new Date('2025-11-18')) {
                 locations.mami = 'España';
@@ -577,7 +654,7 @@
             } else if (date >= new Date('2025-11-10') && date <= new Date('2025-11-18')) {
                 locations.luis = 'España';
             } else {
-                locations.luis = 'Londres'; // Default is London since he lives there
+                locations.luis = 'Londres'; // Always London when not traveling
             }
 
             // You and Lucy - stay in Frankfurt after Mami leaves
@@ -590,6 +667,73 @@
             }
 
             return locations;
+        }
+
+        let currentPersonForColor = '';
+        
+        function showColorPicker(person, event) {
+            const colorPicker = document.getElementById('colorPicker');
+            currentPersonForColor = person;
+            
+            colorPicker.style.display = 'block';
+            colorPicker.style.left = event.pageX + 'px';
+            colorPicker.style.top = event.pageY + 'px';
+            
+            // Close color picker when clicking outside
+            setTimeout(() => {
+                document.addEventListener('click', closeColorPicker);
+            }, 100);
+        }
+        
+        function closeColorPicker(event) {
+            const colorPicker = document.getElementById('colorPicker');
+            if (!colorPicker.contains(event.target)) {
+                colorPicker.style.display = 'none';
+                document.removeEventListener('click', closeColorPicker);
+            }
+        }
+        
+        function changeColor(color) {
+            if (!currentPersonForColor) return;
+            
+            const personElements = document.querySelectorAll(`.${currentPersonForColor}`);
+            const legendColor = document.querySelector(`.legend-color.${currentPersonForColor}`);
+            
+            // Create darker shade for gradient
+            const darkerColor = adjustBrightness(color, -20);
+            const gradient = `linear-gradient(135deg, ${color} 0%, ${darkerColor} 100%)`;
+            
+            // Update all elements with this person's class
+            personElements.forEach(el => {
+                el.style.background = gradient;
+            });
+            
+            // Update legend color
+            if (legendColor) {
+                legendColor.style.background = gradient;
+            }
+            
+            // Close color picker
+            document.getElementById('colorPicker').style.display = 'none';
+            document.removeEventListener('click', closeColorPicker);
+        }
+        
+        function adjustBrightness(hex, percent) {
+            // Remove # if present
+            hex = hex.replace('#', '');
+            
+            // Convert to RGB
+            const r = parseInt(hex.substring(0, 2), 16);
+            const g = parseInt(hex.substring(2, 4), 16);
+            const b = parseInt(hex.substring(4, 6), 16);
+            
+            // Adjust brightness
+            const newR = Math.max(0, Math.min(255, r + (r * percent / 100)));
+            const newG = Math.max(0, Math.min(255, g + (g * percent / 100)));
+            const newB = Math.max(0, Math.min(255, b + (b * percent / 100)));
+            
+            // Convert back to hex
+            return `#${Math.round(newR).toString(16).padStart(2, '0')}${Math.round(newG).toString(16).padStart(2, '0')}${Math.round(newB).toString(16).padStart(2, '0')}`;
         }
 
         function showTab(tabName) {
